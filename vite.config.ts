@@ -11,8 +11,22 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: '[name].[ext]', // Сохраняет оригинальные имена файлов
+      }
+    }
+  }
 
 })
+//  npm run build
+//  cd dist
+// git init
+// git add -A && git commit -m 'deploy'
+// git commit -m 'deploy'
+// //git push -f 'deploy' git@github.com:Hrayrdev/deploy-test.git master:gh-pages
+// git push -f  git@github.com:Frontend-user/deploy-test.git master:gh-pages
 
 // build: {
 //   outDir: 'dist'
