@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/posts-front/',
+  base: '/deploy-test/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -21,15 +21,15 @@ export default defineConfig({
 //git init
 //git add -A
 //git commit -m 'deploy'
-//git push -f 'deploy' git@github.com:Hrayrdev/posts-front.git master:gh-pages
+//git push -f 'deploy' git@github.com:Hrayrdev/deploy-test.git master:gh-pages
 //cd -
 // }ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f ~/.ssh/id_rsa_personal
 // import { defineConfig } from 'vite'
 //
 // export default defineConfig({
-//   base: '/posts-front/',
+//   base: '/deploy-test/',
 //   остальные настройки
 // })
 // module.exports = {
-//   publicPath: '/posts-front/'
+//   publicPath: '/deploy-test/'
 // }
